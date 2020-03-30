@@ -43,7 +43,12 @@ class Weather extends Component {
               this.setState({ found: true });
               this.setState({ tval: resp.main.temp.toString() });
               this.setState({ stat: this.state.weather.weather[0].main });
-              this.setState({ country: this.state.weather.sys.country });
+              console.log("countryName: ", this.state.weather.sys.country);
+              if (this.state.weather.sys.country) {
+                this.setState({
+                  country: ", " + this.state.weather.sys.country
+                });
+              } else this.setState({ country: "" });
             }
           });
         })
@@ -87,7 +92,7 @@ class Weather extends Component {
                 : "Please check your internet connection!"}
               <div className="location">
                 {this.state.weather != "undefined"
-                  ? this.state.weather.name + ", " + this.state.country
+                  ? this.state.weather.name + this.state.country
                   : ""}
               </div>
               <div className="temp">
