@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#app.cold {
+  background-image: url("./images/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#app.warm {
+  background-image: url("./images/warm-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s;
 }
-
-.App-header {
-  background-color: #282c34;
+main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 25px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.096),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+#condDetect.Rain {
+  background-image: url("./images/rain.png");
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation: rain 1s linear infinite;
+  transition: 0.4s;
+}
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 1000% 5%;
+  }
+}
+
+.Searchbox {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.Searchbox .searchbar:focus {
+  outline: 0;
+}
+.Searchbox .searchbar {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border-style: solid;
+  font-size: 20px;
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+}
+.Searchbox .searchbar:hover {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.507);
+  font-size: 20px;
+  border-radius: 16px 0px 16px 0px;
+  transition: 0.4s;
+}
+.WeatherReport {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.WeatherReport .location {
+  font-size: 80px;
   color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
-
-.App-link {
-  color: #61dafb;
+.WeatherReport .date {
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.WeatherReport .temp {
+  font-size: 80px;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+.WeatherReport .status {
+  font-size: 80px;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
