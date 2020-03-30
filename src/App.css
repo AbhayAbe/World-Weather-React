@@ -12,6 +12,7 @@
   background-image: url("./images/cold-bg.jpg");
   background-size: cover;
   background-position: bottom;
+  transition: 0.1s;
 }
 main {
   min-height: 100vh;
