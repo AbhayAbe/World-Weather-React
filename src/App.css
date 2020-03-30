@@ -7,7 +7,6 @@
   background-image: url("./images/warm-bg.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.4s;
 }
 #app.cold {
   background-image: url("./images/cold-bg.jpg");
