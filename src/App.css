@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 #app {
   background-image: url("./images/warm-bg.jpg");
@@ -77,22 +78,22 @@ main {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .location {
-  font-size: 6vw;
+  font-size: 10vw;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .date {
-  font-size: 4vw;
+  font-size: 8vw;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .temp {
-  font-size: 5vw;
+  font-size: 8vw;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .status {
-  font-size: 6vw;
+  font-size: 10vw;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
