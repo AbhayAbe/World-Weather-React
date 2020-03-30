@@ -72,26 +72,26 @@ main {
 .WeatherReport {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 10vw;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .location {
-  font-size: 80px;
+  font-size: 10vw;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .date {
-  font-size: 30px;
+  font-size: 6vw;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .temp {
-  font-size: 80px;
+  font-size: 10vw;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .status {
-  font-size: 80px;
+  font-size: 10vw;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
