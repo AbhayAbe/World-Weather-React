@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow: hidden;
 }
 * {
   margin: 0;
@@ -10,15 +11,15 @@ body {
 #app {
   background-image: url("./images/warm-bg.jpg");
   background-size: cover;
-  /*background-position: bottom;*/
+  background-position: bottom;
 }
 #app.cold {
   background-image: url("./images/cold-bg.jpg");
   background-size: cover;
-  /*background-position: bottom;*/
+  background-position: bottom;
 }
 main {
-  max-height: 100vh;
+  min-height: 100vh;
   padding: 25px;
   background-image: linear-gradient(
     to bottom,
