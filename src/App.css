@@ -7,13 +7,13 @@
   background-image: url("./images/warm-bg.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 #app.cold {
   background-image: url("./images/cold-bg.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 main {
   min-height: 100vh;
