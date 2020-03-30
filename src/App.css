@@ -1,19 +1,15 @@
-body {
-  overflow: hidden;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
-}
-#app {
-  background-image: url("./images/warm-bg.jpg");
-  background-size: cover;
-  background-position: bottom;
 }
 #app.cold {
   background-image: url("./images/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+#app.warm {
+  background-image: url("./images/warm-bg.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -33,7 +29,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+
   animation: rain 1s linear infinite;
   transition: 0.4s;
 }
@@ -80,22 +76,22 @@ main {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .location {
-  font-size: 10vw;
+  font-size: 80px;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .date {
-  font-size: 8vw;
+  font-size: 30px;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .temp {
-  font-size: 8vw;
+  font-size: 80px;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 .WeatherReport .status {
-  font-size: 10vw;
+  font-size: 80px;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
