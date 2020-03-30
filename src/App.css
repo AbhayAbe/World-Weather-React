@@ -8,10 +8,8 @@
   background-image: url("./images/warm-bg.jpg");
   background-size: cover;
   background-position: bottom;
-  transition: 0.3s;
 }
 #app.cold {
-  background-image: url("./images/warm-bg.jpg");
   background-image: url("./images/cold-bg.jpg");
   background-size: cover;
   background-position: bottom;
@@ -32,7 +30,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-
+  background-size: cover;
   animation: rain 1s linear infinite;
   transition: 0.4s;
 }
