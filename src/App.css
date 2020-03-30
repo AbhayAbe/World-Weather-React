@@ -3,17 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-#app.cold {
-  background-image: url("./images/cold-bg.jpg");
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4s;
-}
-#app.warm {
+#app {
   background-image: url("./images/warm-bg.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s;
+}
+#app.cold {
+  background-image: url("./images/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 main {
   min-height: 100vh;
